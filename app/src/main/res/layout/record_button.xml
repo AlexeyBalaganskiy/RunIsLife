@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_below="@id/mapp"
+        android:layout_marginLeft="0dip"
+
+        android:layout_marginTop="-115dp"
+        android:layout_marginRight="150dip"
+        android:background="#FFFFFF"
+        android:gravity="center_horizontal"
+        android:text="Расстояние"
+        android:textColor="#110F0F"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="0dip"
+        android:layout_below="@id/textView6"
+        android:layout_marginRight="150dip"
+        android:background="#FFFFFF"
+        android:gravity="center_horizontal"
+        android:text="Время"
+        android:textColor="#110F0F"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_below="@id/textView"
+        android:layout_marginLeft="0dip"
+        android:layout_marginTop="0dip"
+        android:layout_marginRight="150dip"
+        android:background="#FFFFFF"
+        android:gravity="center_horizontal"
+        android:text="Скорость"
+        android:textColor="#110F0F"
+        android:textSize="24sp" />
+
+    <Spinner
+        android:id="@+id/button_spinner"
+        android:layout_width="200dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip" />
+
+
+
+    <fragment
+        android:id="@+id/mapp"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="452dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="115dp"></fragment>
+
+    <TextView
+        android:id="@+id/button_time"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_below="@id/button_speed"
+        android:layout_marginLeft="200dip"
+        android:background="#FFFFFF"
+        android:gravity="center_horizontal"
+        android:text="0:00:00"
+        android:textColor="#110F0F"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/button_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_below="@id/mapp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="200dip"
+        android:layout_marginTop="-115dp"
+        android:background="#FFFFFF"
+        android:gravity="center_horizontal"
+        android:text="0,00 Км"
+        android:textColor="#110F0F"
+        android:textSize="24sp" />
+
+    <!-- TextView with layout weight of 1 out of 4 -->
+
+    <TextView
+        android:id="@+id/button_speed"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_below="@id/button_distance"
+        android:layout_marginLeft="200dip"
+        android:background="#FFFFFF"
+        android:gravity="center_horizontal"
+        android:text="0,00 Км/ч"
+        android:textColor="#110F0F"
+        android:textSize="24sp" />
+    <ImageButton
+        android:id="@+id/button_delete"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="10dip"
+        android:layout_marginRight="35dp"
+        android:layout_toLeftOf="@id/button_chart"
+
+        android:src="@drawable/test"
+        android:text="Удалить"
+        android:textColor="@color/red"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/button_chart"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="10dip"
+        android:layout_marginRight="-260dp"
+        android:layout_toLeftOf="@id/button_spinner"
+        android:background="#FFFFFF"
+        android:src="@drawable/grafic"
+        android:text="График"
+        android:textColor="@color/blue"></ImageButton>
+
+</RelativeLayout>
+

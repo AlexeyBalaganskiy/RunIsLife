@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ap="http://schemas.android.com/apk/res-auto"
+    style="@style/AppThemeFull"
+    android:orientation="horizontal"
+    >
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:padding="10dp" />
+
+
+</LinearLayout>

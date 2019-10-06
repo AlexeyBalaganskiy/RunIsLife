@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/button_all"
+            android:layout_width="match_parent" android:layout_height="match_parent">
+
+            <!-- TextView with layout weight of 1 out of 4 -->
+
+            <Button
+                android:id="@+id/button_fast_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50dip"
+                android:layout_marginTop="190dip"
+                android:layout_marginRight="50dip"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:textColor="@android:color/white"
+                app:backgroundTint="@color/green"
+                android:text="Быстрый старт"></Button>
+
+
+            <Button
+                android:id="@+id/button_stop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button_fast_start"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50dip"
+                android:layout_marginTop="20dip"
+                android:layout_marginRight="50dip"
+                android:text="Выбрать тренировку"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:textColor="@android:color/white"
+                app:backgroundTint="@color/red"></Button>
+
+            <Button
+                android:id="@+id/button_chart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/button_stop"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50dip"
+                android:layout_marginTop="20dip"
+                android:layout_marginRight="50dip"
+                android:text="Создать тренировку"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:textColor="@android:color/white"
+                app:backgroundTint="@color/blue"></Button>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/button_start"
+                android:layout_alignStart="@+id/button_start">
+
+            </TableRow>
+
+        </RelativeLayout>
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

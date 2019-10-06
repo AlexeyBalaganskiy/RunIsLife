@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">RunIsLife</string>
+    <string name="start">START</string>
+    <string name="stop">STOP</string>
+    <string name="mail">MAIL</string>
+    <string name="dial">DIAL</string>
+    <string name="save">SAVE</string>
+    <string name="saved">SAVED</string>
+    <string name="chart">CHART</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="pause">PAUSE</string>
+    <string name="fast_start">FAST_START</string>
+    <string name="resume">RESUME</string>
+    <string name="map">MAP</string>
+    <string name="time">Time</string>
+    <string name="distance">Distance</string>
+    <string name="speed">Speed</string>
+    <string name="delete">Delete</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    <string name="share">Share</string>
+    <string name="no_data_save">No new data to be saved</string>
+    <string name="gps_prompt">Your GPS seems to be disabled, do you want to enable it?</string>
+    <string name="gps_no_permision">The app do not have the permission to use GPS.</string>
+    <string name="gps_listen_fail">Listen to location fail. </string>
+    <string name="gps_precision_low">ACCURACY too low. %f</string>
+    <string name="gps_precision_low2">Gps accuracy too low, less than %dm</string>
+    <string name="exit_prompt">You have unsaved running record, continue to exit?</string>
+    <string name="exit_prompt2">Tap back button twice in order to exit</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="end">end</string>
+    <string name="altitude">Altitude</string>
+    <string name="select_prompt">Выберите рекорд</string>
+    <string name="select_no">Нет рекорда для выбора</string>
+    <string name="restart_prompt">Restarting App is recommended after changing configuration.</string>
+    <string name="have_fun">Jason Chan: Have fun.</string>
+    <string name="open_source">RunHelper is an open source project. For more info, see: https://github.com/zwChan/RunningX</string>
+    <string-array name="nav_drawer_items">
+        <item>RunIsLife </item>
+        <item>Мой план</item>
+        <item>История рекордов</item>
+        <item>О программе</item>
+    </string-array>
+    <array name="nav_drawer_icons">
+        <item>@drawable/run</item>
+        <item>@drawable/raspisanie</item>
+        <item>@drawable/record</item>
+        <item>@drawable/about</item>
+    </array>
+    <string-array name="record_spinner">
+        <item>Select a record</item>
+    </string-array>
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="international">International</string>
+    <string name="pace">Pace</string>
+    <string name="title_activity_faststart">faststart</string>
+    <string name="title_activity_fast_start">fast_start</string>
+    <string name="title_activity_all_plans">Все тренировки</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_add_training">Создание тренировки</string>
+    <string name="title_activity_select_exercise">Выбор упражнения</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+</resources>

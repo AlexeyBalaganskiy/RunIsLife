@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></fragment>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFFFF"
+                    android:gravity="center_horizontal"
+                    android:text="Время "
+                    android:textColor="#110F0F"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/button_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFFFF"
+                    android:gravity="center_horizontal"
+                    android:text="0:00:00"
+                    android:textColor="#110F0F"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFFFF"
+                    android:gravity="center_horizontal"
+                    android:text="Расстояние "
+                    android:textColor="#110F0F"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/button_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFFFF"
+                    android:gravity="center_horizontal"
+                    android:textColor="#110F0F"
+                    android:text="0,00 Км"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFFFF"
+                    android:gravity="center_horizontal"
+                    android:text="Скорость "
+                    android:textColor="#110F0F"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/button_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFFFF"
+                    android:gravity="center_horizontal"
+                    android:text="0,00 Км/ч"
+                    android:textColor="#110F0F"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:textColor="@android:color/white"
+                    app:backgroundTint="@color/blue"
+                    android:text="Начать" />
+
+
+                <Button
+                    android:id="@+id/button_stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Сохранить"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:textColor="@android:color/white"
+                    app:backgroundTint="@color/red"/>
+
+                <Button
+
+                    android:id="@+id/button_chart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="График"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:textColor="@android:color/white"
+                    app:backgroundTint="@color/green"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>
