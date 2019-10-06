@@ -35,7 +35,7 @@ public class TimelineFragment extends Fragment implements AdapterView.OnItemSele
     TextView textTime = null;
     Spinner buttonSpinner;
 
-    public final static String EXTRA_MESSAGE = "com.votors.runningx.MESSAGE";
+    public final static String EXTRA_MESSAGE = "MESSAGE";
     GoogleMap map;
     Record record;
     ArrayList<Date> recordsDate = null;
